@@ -1,11 +1,3 @@
-/*
-html5doctor.com Reset Stylesheet
-v1.6.1
-Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com
-Twitter: @rich_clark
-*/
-
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -101,55 +93,39 @@ input, select {
     vertical-align:middle;
 }
 
-.container {
-  text-align: center;
-  margin-top: 360px;
-}
-.btn {
-  border: 1px solid #3498db;
-  background: none;
-  padding: 10px 20px;
-  font-size:20px;
-  font-family: "montserrat";
-  cursor: pointer;
-  margin: 10px;
-  transition: 0.8s;
-  position: relative;
-  overflow: hidden;
+button {
+  font: 14px 'Trebuchet MS', sans-serif;
+  font-size: 25px;
 }
 
-.btn1, .btn2{
-  color: #3498db;
+.button{
+  padding: 24px 48px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: #ccc;
 }
 
-.btn1:hover, .btn2:hover{
-  color:#fff
+.button-primary{
+  background-color: slategrey;
+  color:#fff;
 }
 
-.btn::before{
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 0%;
-  background:#3498db;
-  z-index: -1;
-  transition:0.8s;
-}
-
-.btn1::before, .btn2::before{
-  top:0;
-  border-radius: 0 0 50% 50%;
-}
-
-.btn1:hover::before, .btn2:hover::before{
-  height:180%;
+.button-primary:hover{
+  background-color: lightslategrey;
 }
 
 .title {
   color: grey;
-  font-size: 70px;
+  font-size: 100px;
   margin: 0px;
   background-color: orange;
+  text-align: center;
+}
+
+.by {
+  color: black;
+  font-size: 35px;
+  margin: 0px;
   text-align: center;
 }
